@@ -124,7 +124,7 @@ Run pipelines:
 
 python train_classic_binary.py python train_classic_multiclass.py python
 cnn_binary_runner.py
-```bash
+```
 ------------------------------------------------------------------------
 
 ## 📈 Output Structure
