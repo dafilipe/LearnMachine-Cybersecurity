@@ -44,16 +44,7 @@ Benchmark datasets such as KDDCup99 and NSL-KDD are widely used for:
 This framework was designed to provide reproducible, structured, and
 research-oriented experimentation.
 
-------------------------------------------------------------------------
 
-## 🏗 System Architecture
-
-. ├── train_classic_binary.py ├── train_classic_multiclass.py ├──
-cnn_binary_runner.py ├── rawfile2Binary.py ├── rawfile2Multiclass.py ├──
-trainingmodels.py ├── trainingmodels_multiclass.py ├──
-trainingmodels_ovr.py ├── metricCalculator.py ├──
-eval_global_and_difficulty.py ├── plot_utils.py ├──
-log_train_distribution.py ├── results/ └── export.bib
 
 ------------------------------------------------------------------------
 
@@ -133,7 +124,7 @@ Run pipelines:
 
 python train_classic_binary.py python train_classic_multiclass.py python
 cnn_binary_runner.py
-
+```bash
 ------------------------------------------------------------------------
 
 ## 📈 Output Structure
