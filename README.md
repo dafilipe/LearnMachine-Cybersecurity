@@ -118,9 +118,11 @@ Features:
 
 ## 🚀 Running the Framework
 
-Clone the repository:
+### 1️⃣ Clone the repository
 
-git clone git@github.com:dafilipe/LearnMachine-Cybersecurity.git cd your-repo
+```bash
+git clone https://github.com/dafilipe/LearnMachine-Cybersecurity.git
+cd LearnMachine-Cybersecurity
 
 Create environment:
 
@@ -136,9 +138,14 @@ cnn_binary_runner.py
 
 ## 📈 Output Structure
 
-results/ └── run_timestamp/ ├── metrics.txt ├── metrics.tex ├──
-confusion_matrix.png ├── training_history.png ├── checkpoint-XX.keras
-└── cnn_model_final.keras
+results/
+└── run_YYYY-MM-DD_HHMM/
+    ├── metrics.txt
+    ├── metrics.tex
+    ├── confusion_matrix.png
+    ├── training_history.png
+    ├── checkpoint-XX.keras
+    └── cnn_model_final.keras
 
 ------------------------------------------------------------------------
 
