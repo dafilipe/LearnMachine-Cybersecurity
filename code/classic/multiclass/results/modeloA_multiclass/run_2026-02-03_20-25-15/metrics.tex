@@ -1,0 +1,135 @@
+\documentclass[11pt]{article}
+\usepackage[a4paper,margin=2cm]{geometry}
+\usepackage{booktabs}
+\usepackage{longtable}
+\usepackage{array}
+\usepackage{hyperref}
+\usepackage{caption}
+\captionsetup{labelformat=empty}
+
+\title{Resultados Multiclass}
+\author{Diogo}
+\date{2026-02-03 20:25:15}
+
+\begin{document}
+\maketitle
+
+\section*{Configuração}
+\begin{tabular}{lr}
+\toprule
+Campo & Valor \\
+\midrule
+Modo & 1 \\
+Dataset & KDDCup99 \\
+RUN\_DIR & results\textbackslash\{\}textbackslash\textbackslash\{\}\{\textbackslash\{\}\}modeloA\textbackslash\{\}\_multiclass\textbackslash\{\}textbackslash\textbackslash\{\}\{\textbackslash\{\}\}run\textbackslash\{\}\_2026-02-03\textbackslash\{\}\_20-25-15 \\
+Timestamp & run\textbackslash\{\}\_2026-02-03\textbackslash\{\}\_20-25-15 \\
+\bottomrule
+\end{tabular}
+
+\section*{Dataset \& Split}
+\begin{center}
+\textbf{Configuração do dataset e split}\par
+\begin{tabular}{lr}
+\toprule
+Campo & Valor \\
+\midrule
+Dataset & KDDCup99 \\
+Split type & Holdout split (train\textbackslash\{\}\_test\textbackslash\{\}\_split) \\
+test\_size & 0.4 \\
+stratify & attack \\
+random\_state & 42 \\
+shuffle & True \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\subsection*{Random Forest (Multiclass Attack)}
+\begin{center}
+\textbf{Métricas globais}\par
+\begin{tabular}{lr}
+\toprule
+Campo & Valor \\
+\midrule
+Accuracy & 0.999742 \\
+Precision (macro) & 0.758219 \\
+Recall (macro) & 0.706591 \\
+F1-score (macro) & 0.725320 \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\begin{center}
+\textbf{Classification report (por classe)}\par
+\begin{longtable}{lrrrr}
+\toprule
+class & precision & recall & f1 & support \\
+\midrule
+smurf & 1.0000 & 1.0000 & 1.0000 & 112316 \\
+neptune & 1.0000 & 1.0000 & 1.0000 & 42880 \\
+normal & 0.9992 & 0.9999 & 0.9995 & 38911 \\
+back & 1.0000 & 1.0000 & 1.0000 & 881 \\
+satan & 1.0000 & 0.9937 & 0.9968 & 636 \\
+ipsweep & 0.9980 & 0.9840 & 0.9909 & 499 \\
+portsweep & 0.9952 & 0.9976 & 0.9964 & 416 \\
+warezclient & 0.9902 & 0.9902 & 0.9902 & 408 \\
+teardrop & 1.0000 & 1.0000 & 1.0000 & 392 \\
+pod & 1.0000 & 1.0000 & 1.0000 & 106 \\
+nmap & 0.9565 & 0.9565 & 0.9565 & 92 \\
+guess\_passwd & 1.0000 & 0.9048 & 0.9500 & 21 \\
+buffer\_overflow & 0.6250 & 0.8333 & 0.7143 & 12 \\
+land & 0.8750 & 0.8750 & 0.8750 & 8 \\
+warezmaster & 1.0000 & 0.7500 & 0.8571 & 8 \\
+imap & 1.0000 & 0.8000 & 0.8889 & 5 \\
+loadmodule & 0.0000 & 0.0000 & 0.0000 & 4 \\
+rootkit & 0.0000 & 0.0000 & 0.0000 & 4 \\
+ftp\_write & 1.0000 & 0.6667 & 0.8000 & 3 \\
+multihop & 0.0000 & 0.0000 & 0.0000 & 3 \\
+phf & 1.0000 & 0.5000 & 0.6667 & 2 \\
+perl & 0.0000 & 0.0000 & 0.0000 & 1 \\
+spy & 0.0000 & 0.0000 & 0.0000 & 1 \\
+\bottomrule
+\end{longtable}
+\end{center}
+
+\begin{center}
+\textbf{Confusion matrix (top-15 por suporte)}\par
+\begin{longtable}{lrrrrrrrrrrrrrrr}
+\toprule
+true \textbackslash\{\} pred & back & buffer\_overflow & guess\_passwd & ipsweep & land & neptune & nmap & normal & pod & portsweep & satan & smurf & teardrop & warezclient & warezmaster \\
+\midrule
+back & 881 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\
+buffer\_overflow & 0 & 10 & 0 & 0 & 0 & 0 & 0 & 2 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\
+guess\_passwd & 0 & 0 & 19 & 0 & 1 & 0 & 0 & 1 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\
+ipsweep & 0 & 0 & 0 & 491 & 0 & 0 & 4 & 3 & 0 & 1 & 0 & 0 & 0 & 0 & 0 \\
+land & 0 & 0 & 0 & 0 & 7 & 0 & 0 & 1 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\
+neptune & 0 & 0 & 0 & 0 & 0 & 42879 & 0 & 0 & 0 & 1 & 0 & 0 & 0 & 0 & 0 \\
+nmap & 0 & 0 & 0 & 1 & 0 & 0 & 88 & 3 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\
+normal & 0 & 1 & 0 & 0 & 0 & 0 & 0 & 38906 & 0 & 0 & 0 & 0 & 0 & 4 & 0 \\
+pod & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 106 & 0 & 0 & 0 & 0 & 0 & 0 \\
+portsweep & 0 & 0 & 0 & 0 & 0 & 1 & 0 & 0 & 0 & 415 & 0 & 0 & 0 & 0 & 0 \\
+satan & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 4 & 0 & 0 & 632 & 0 & 0 & 0 & 0 \\
+smurf & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 1 & 0 & 0 & 0 & 112315 & 0 & 0 & 0 \\
+teardrop & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 392 & 0 & 0 \\
+warezclient & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 4 & 0 & 0 & 0 & 0 & 0 & 404 & 0 \\
+warezmaster & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 2 & 0 & 0 & 0 & 0 & 0 & 0 & 6 \\
+\bottomrule
+\end{longtable}
+\end{center}
+
+\begin{center}
+\textbf{Acertos/Erros por family}\par
+\begin{longtable}{lrrrr}
+\toprule
+family & total & correct & wrong & acc \\
+\midrule
+dos & 156583 & 156580 & 3 & 1.0000 \\
+normal & 38911 & 38906 & 5 & 0.9999 \\
+probe & 1643 & 1626 & 17 & 0.9897 \\
+r2l & 451 & 436 & 15 & 0.9667 \\
+u2r & 21 & 10 & 11 & 0.4762 \\
+\bottomrule
+\end{longtable}
+\end{center}
+
+
+\end{document}

@@ -1,0 +1,44 @@
+
+==================================================
+RUN BASELINE — TRAIN DISTRIBUTION
+Time : 2026-02-06 15:26:30
+==================================================
+Total samples     : 125973
+True normal (0)   : 67343 (53.46%)
+True attack (1)   : 58630 (46.54%)
+==================================================
+
+
+==================================================
+MODEL CONFIGURATION
+==================================================
+Dataset Choice : 2
+CNN Version    : 3
+Epochs         : 500
+Batch Size     : 2048
+Input Shape    : (125973, 41, 1)
+Output Dir     : results/run_2026-02-06_1526
+==================================================
+
+==================================================
+FINAL EVALUATION REPORT
+==================================================
+Best Model Loaded: results/run_2026-02-06_1526/checkpoint-179.keras
+
+CONFUSION MATRIX:
+[[9367  344]
+ [3822 9011]]
+(Format: [TN, FP]
+         [FN, TP])
+
+CLASSIFICATION REPORT:
+              precision    recall  f1-score   support
+
+      Normal       0.71      0.96      0.82      9711
+      Attack       0.96      0.70      0.81     12833
+
+    accuracy                           0.82     22544
+   macro avg       0.84      0.83      0.82     22544
+weighted avg       0.85      0.82      0.81     22544
+
+==================================================

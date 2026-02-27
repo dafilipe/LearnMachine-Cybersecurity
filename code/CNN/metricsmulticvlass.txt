@@ -1,0 +1,340 @@
+
+==================================================
+Model: Random Forest (Multiclass Attack)
+Time : 2026-02-05 13:06:10
+==================================================
+Mode : LABELED TEST
+
+Accuracy : 0.7216
+Precision: 0.2649 (macro)
+Recall   : 0.2941 (macro)
+F1-score : 0.2628 (macro)
+
+                 precision    recall  f1-score   support
+
+        apache2       0.00      0.00      0.00       737
+           back       0.82      0.98      0.89       359
+buffer_overflow       0.43      0.15      0.22        20
+      ftp_write       0.00      0.00      0.00         3
+   guess_passwd       0.00      0.00      0.00      1231
+     httptunnel       0.00      0.00      0.00       133
+           imap       0.00      0.00      0.00         1
+        ipsweep       0.93      0.99      0.96       141
+           land       1.00      0.43      0.60         7
+     loadmodule       0.00      0.00      0.00         2
+       mailbomb       0.00      0.00      0.00       293
+          mscan       0.00      0.00      0.00       996
+       multihop       0.00      0.00      0.00        18
+          named       0.00      0.00      0.00        17
+        neptune       0.97      0.99      0.98      4657
+           nmap       0.45      0.96      0.61        73
+         normal       0.63      0.98      0.77      9711
+           perl       0.50      0.50      0.50         2
+            phf       1.00      0.50      0.67         2
+            pod       0.72      0.95      0.82        41
+      portsweep       0.73      0.92      0.82       157
+   processtable       0.00      0.00      0.00       685
+             ps       0.00      0.00      0.00        15
+        rootkit       0.00      0.00      0.00        13
+          saint       0.00      0.00      0.00       319
+          satan       0.66      1.00      0.79       735
+       sendmail       0.00      0.00      0.00        14
+          smurf       1.00      1.00      1.00       665
+  snmpgetattack       0.00      0.00      0.00       178
+      snmpguess       0.00      0.00      0.00       331
+      sqlattack       0.00      0.00      0.00         2
+       teardrop       0.23      0.83      0.36        12
+       udpstorm       0.00      0.00      0.00         2
+    warezmaster       0.00      0.00      0.00       944
+           worm       0.00      0.00      0.00         2
+          xlock       0.00      0.00      0.00         9
+         xsnoop       0.00      0.00      0.00         4
+          xterm       0.00      0.00      0.00        13
+
+       accuracy                           0.72     22544
+      macro avg       0.26      0.29      0.26     22544
+   weighted avg       0.55      0.72      0.62     22544
+
+
+
+--- Acertos/Erros por family---
+family        total    correct    wrong      acc
+normal         9711       9483      228   97.65%
+dos            5741       5694       47   99.18%
+unknown        3750          0     3750    0.00%
+r2l            2199          1     2198    0.05%
+probe          1106       1086       20   98.19%
+u2r              37          4       33   10.81%
+
+==================================================
+Model: Logistic Regression (Multiclass Attack)
+Time : 2026-02-05 13:06:20
+==================================================
+Mode : LABELED TEST
+
+Accuracy : 0.6620
+Precision: 0.1210 (macro)
+Recall   : 0.1214 (macro)
+F1-score : 0.1000 (macro)
+
+                 precision    recall  f1-score   support
+
+        apache2       0.00      0.00      0.00       737
+           back       0.00      0.00      0.00       359
+buffer_overflow       0.00      0.00      0.00        20
+      ftp_write       0.00      0.00      0.00         3
+   guess_passwd       0.00      0.00      0.00      1231
+     httptunnel       0.00      0.00      0.00       133
+           imap       0.00      0.00      0.00         1
+        ipsweep       0.23      0.38      0.29       141
+           land       0.00      0.00      0.00         7
+     loadmodule       0.00      0.00      0.00         2
+       mailbomb       0.00      0.00      0.00       293
+          mscan       0.00      0.00      0.00       996
+       multihop       0.00      0.00      0.00        18
+          named       0.00      0.00      0.00        17
+        neptune       0.77      1.00      0.87      4657
+           nmap       1.00      0.05      0.10        73
+         normal       0.63      0.97      0.76      9711
+           perl       0.00      0.00      0.00         2
+            phf       0.00      0.00      0.00         2
+            pod       0.00      0.00      0.00        41
+      portsweep       0.28      0.87      0.42       157
+   processtable       0.00      0.00      0.00       685
+             ps       0.00      0.00      0.00        15
+        rootkit       0.00      0.00      0.00        13
+          saint       0.00      0.00      0.00       319
+          satan       0.57      0.22      0.31       735
+       sendmail       0.00      0.00      0.00        14
+          smurf       0.97      0.72      0.82       665
+  snmpgetattack       0.00      0.00      0.00       178
+      snmpguess       0.00      0.00      0.00       331
+      sqlattack       0.00      0.00      0.00         2
+       teardrop       0.14      0.42      0.21        12
+       udpstorm       0.00      0.00      0.00         2
+    warezmaster       0.00      0.00      0.00       944
+           worm       0.00      0.00      0.00         2
+          xlock       0.00      0.00      0.00         9
+         xsnoop       0.00      0.00      0.00         4
+          xterm       0.00      0.00      0.00        13
+
+       accuracy                           0.66     22544
+      macro avg       0.12      0.12      0.10     22544
+   weighted avg       0.48      0.66      0.55     22544
+
+
+
+--- Acertos/Erros por family---
+family        total    correct    wrong      acc
+normal         9711       9457      254   97.38%
+dos            5741       5116      625   89.11%
+unknown        3750          0     3750    0.00%
+r2l            2199          0     2199    0.00%
+probe          1106        352      754   31.83%
+u2r              37          0       37    0.00%
+
+==================================================
+Model: Gaussian Naive Bayes (Multiclass Attack)
+Time : 2026-02-05 13:06:21
+==================================================
+Mode : LABELED TEST
+
+Accuracy : 0.2681
+Precision: 0.1202 (macro)
+Recall   : 0.2039 (macro)
+F1-score : 0.1123 (macro)
+
+                 precision    recall  f1-score   support
+
+        apache2       0.00      0.00      0.00       737
+           back       0.84      0.99      0.91       359
+buffer_overflow       0.00      0.05      0.00        20
+      ftp_write       0.00      0.00      0.00         3
+   guess_passwd       0.96      0.02      0.04      1231
+     httptunnel       0.00      0.00      0.00       133
+           imap       0.00      0.00      0.00         1
+        ipsweep       0.04      0.35      0.07       141
+           land       0.22      1.00      0.36         7
+     loadmodule       0.00      0.00      0.00         2
+       mailbomb       0.00      0.00      0.00       293
+          mscan       0.00      0.00      0.00       996
+       multihop       0.00      0.11      0.01        18
+          named       0.00      0.00      0.00        17
+        neptune       0.82      0.99      0.90      4657
+           nmap       0.10      0.90      0.18        73
+         normal       0.11      0.01      0.02      9711
+           perl       0.00      0.00      0.00         2
+            phf       0.00      0.00      0.00         2
+            pod       0.64      0.85      0.73        41
+      portsweep       0.22      0.82      0.34       157
+   processtable       0.00      0.00      0.00       685
+             ps       0.00      0.00      0.00        15
+        rootkit       0.00      0.08      0.00        13
+          saint       0.00      0.00      0.00       319
+          satan       0.04      0.01      0.01       735
+       sendmail       0.00      0.00      0.00        14
+          smurf       0.77      0.98      0.87       665
+  snmpgetattack       0.00      0.00      0.00       178
+      snmpguess       0.00      0.00      0.00       331
+            spy       0.00      0.00      0.00         0
+      sqlattack       0.00      0.00      0.00         2
+       teardrop       0.03      1.00      0.05        12
+       udpstorm       0.00      0.00      0.00         2
+    warezclient       0.00      0.00      0.00         0
+    warezmaster       0.01      0.00      0.00       944
+           worm       0.00      0.00      0.00         2
+          xlock       0.00      0.00      0.00         9
+         xsnoop       0.00      0.00      0.00         4
+          xterm       0.00      0.00      0.00        13
+
+       accuracy                           0.27     22544
+      macro avg       0.12      0.20      0.11     22544
+   weighted avg       0.31      0.27      0.24     22544
+
+
+
+--- Acertos/Erros por family---
+family        total    correct    wrong      acc
+normal         9711        104     9607    1.07%
+dos            5741       5664       77   98.66%
+unknown        3750          0     3750    0.00%
+r2l            2199         26     2173    1.18%
+probe          1106        248      858   22.42%
+u2r              37          2       35    5.41%
+
+==================================================
+Model: Decision Tree (Multiclass Attack)
+Time : 2026-02-05 13:06:24
+==================================================
+Mode : LABELED TEST
+
+Accuracy : 0.7143
+Precision: 0.2551 (macro)
+Recall   : 0.3096 (macro)
+F1-score : 0.2644 (macro)
+
+                 precision    recall  f1-score   support
+
+        apache2       0.00      0.00      0.00       737
+           back       1.00      0.85      0.92       359
+buffer_overflow       0.38      0.40      0.39        20
+      ftp_write       0.17      0.33      0.22         3
+   guess_passwd       0.00      0.00      0.00      1231
+     httptunnel       0.00      0.00      0.00       133
+           imap       0.00      0.00      0.00         1
+        ipsweep       0.57      0.98      0.72       141
+           land       0.40      0.57      0.47         7
+     loadmodule       1.00      0.50      0.67         2
+       mailbomb       0.00      0.00      0.00       293
+          mscan       0.00      0.00      0.00       996
+       multihop       0.00      0.00      0.00        18
+          named       0.00      0.00      0.00        17
+        neptune       0.94      0.98      0.96      4657
+           nmap       0.83      1.00      0.91        73
+         normal       0.66      0.97      0.79      9711
+           perl       0.20      0.50      0.29         2
+            phf       1.00      0.50      0.67         2
+            pod       0.72      0.93      0.81        41
+      portsweep       0.54      0.89      0.67       157
+   processtable       0.00      0.00      0.00       685
+             ps       0.00      0.00      0.00        15
+        rootkit       0.00      0.00      0.00        13
+          saint       0.00      0.00      0.00       319
+          satan       0.55      0.98      0.70       735
+       sendmail       0.00      0.00      0.00        14
+          smurf       1.00      1.00      1.00       665
+  snmpgetattack       0.00      0.00      0.00       178
+      snmpguess       0.00      0.00      0.00       331
+            spy       0.00      0.00      0.00         0
+      sqlattack       0.00      0.00      0.00         2
+       teardrop       0.24      1.00      0.39        12
+       udpstorm       0.00      0.00      0.00         2
+    warezclient       0.00      0.00      0.00         0
+    warezmaster       0.00      0.00      0.00       944
+           worm       0.00      0.00      0.00         2
+          xlock       0.00      0.00      0.00         9
+         xsnoop       0.00      0.00      0.00         4
+          xterm       0.00      0.00      0.00        13
+
+       accuracy                           0.71     22544
+      macro avg       0.26      0.31      0.26     22544
+   weighted avg       0.56      0.71      0.62     22544
+
+
+
+--- Acertos/Erros por family---
+family        total    correct    wrong      acc
+normal         9711       9419      292   96.99%
+dos            5741       5599      142   97.53%
+unknown        3750          0     3750    0.00%
+r2l            2199          2     2197    0.09%
+probe          1106       1074       32   97.11%
+u2r              37         10       27   27.03%
+
+==================================================
+Model: K-Nearest Neighbors (Multiclass Attack)
+Time : 2026-02-05 13:06:25
+==================================================
+Mode : LABELED TEST
+
+Accuracy : 0.7082
+Precision: 0.2559 (macro)
+Recall   : 0.2660 (macro)
+F1-score : 0.2289 (macro)
+
+                 precision    recall  f1-score   support
+
+        apache2       0.00      0.00      0.00       737
+           back       0.99      0.94      0.96       359
+buffer_overflow       0.50      0.25      0.33        20
+      ftp_write       0.00      0.00      0.00         3
+   guess_passwd       1.00      0.00      0.00      1231
+     httptunnel       0.00      0.00      0.00       133
+           imap       0.00      0.00      0.00         1
+        ipsweep       0.46      0.97      0.62       141
+           land       0.57      0.57      0.57         7
+     loadmodule       0.00      0.00      0.00         2
+       mailbomb       0.00      0.00      0.00       293
+          mscan       0.00      0.00      0.00       996
+       multihop       0.50      0.06      0.10        18
+          named       0.00      0.00      0.00        17
+        neptune       0.89      0.97      0.93      4657
+           nmap       0.70      0.97      0.81        73
+         normal       0.68      0.97      0.80      9711
+           perl       0.00      0.00      0.00         2
+            phf       1.00      0.50      0.67         2
+            pod       0.69      0.88      0.77        41
+      portsweep       0.23      0.86      0.37       157
+   processtable       0.00      0.00      0.00       685
+             ps       0.00      0.00      0.00        15
+        rootkit       0.00      0.00      0.00        13
+          saint       0.00      0.00      0.00       319
+          satan       0.58      0.87      0.70       735
+       sendmail       0.00      0.00      0.00        14
+          smurf       0.97      0.98      0.98       665
+  snmpgetattack       0.00      0.00      0.00       178
+      snmpguess       0.00      0.00      0.00       331
+      sqlattack       0.00      0.00      0.00         2
+       teardrop       0.21      0.58      0.31        12
+       udpstorm       0.00      0.00      0.00         2
+    warezclient       0.00      0.00      0.00         0
+    warezmaster       0.00      0.00      0.00       944
+           worm       0.00      0.00      0.00         2
+          xlock       0.00      0.00      0.00         9
+         xsnoop       0.00      0.00      0.00         4
+          xterm       0.00      0.00      0.00        13
+
+       accuracy                           0.71     22544
+      macro avg       0.26      0.27      0.23     22544
+   weighted avg       0.60      0.71      0.61     22544
+
+
+
+--- Acertos/Erros por family---
+family        total    correct    wrong      acc
+normal         9711       9431      280   97.12%
+dos            5741       5543      198   96.55%
+unknown        3750          0     3750    0.00%
+r2l            2199          3     2196    0.14%
+probe          1106        983      123   88.88%
+u2r              37          5       32   13.51%

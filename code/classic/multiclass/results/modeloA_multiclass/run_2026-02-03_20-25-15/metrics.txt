@@ -1,0 +1,51 @@
+
+==================================================
+Model: Random Forest (Multiclass Attack)
+Time : 2026-02-03 20:26:04
+==================================================
+Mode : LABELED TEST
+
+Accuracy : 0.9997
+Precision: 0.7582 (macro)
+Recall   : 0.7066 (macro)
+F1-score : 0.7253 (macro)
+
+                 precision    recall  f1-score   support
+
+           back       1.00      1.00      1.00       881
+buffer_overflow       0.62      0.83      0.71        12
+      ftp_write       1.00      0.67      0.80         3
+   guess_passwd       1.00      0.90      0.95        21
+           imap       1.00      0.80      0.89         5
+        ipsweep       1.00      0.98      0.99       499
+           land       0.88      0.88      0.88         8
+     loadmodule       0.00      0.00      0.00         4
+       multihop       0.00      0.00      0.00         3
+        neptune       1.00      1.00      1.00     42880
+           nmap       0.96      0.96      0.96        92
+         normal       1.00      1.00      1.00     38911
+           perl       0.00      0.00      0.00         1
+            phf       1.00      0.50      0.67         2
+            pod       1.00      1.00      1.00       106
+      portsweep       1.00      1.00      1.00       416
+        rootkit       0.00      0.00      0.00         4
+          satan       1.00      0.99      1.00       636
+          smurf       1.00      1.00      1.00    112316
+            spy       0.00      0.00      0.00         1
+       teardrop       1.00      1.00      1.00       392
+    warezclient       0.99      0.99      0.99       408
+    warezmaster       1.00      0.75      0.86         8
+
+       accuracy                           1.00    197609
+      macro avg       0.76      0.71      0.73    197609
+   weighted avg       1.00      1.00      1.00    197609
+
+
+
+--- Acertos/Erros por family---
+family        total    correct    wrong      acc
+dos          156583     156580        3  100.00%
+normal        38911      38906        5   99.99%
+probe          1643       1626       17   98.97%
+r2l             451        436       15   96.67%
+u2r              21         10       11   47.62%
