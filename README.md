@@ -120,7 +120,7 @@ Features:
 
 Clone the repository:
 
-git clone https://github.com/yourusername/your-repo.git cd your-repo
+git clone git@github.com:dafilipe/LearnMachine-Cybersecurity.git cd your-repo
 
 Create environment:
 
@@ -160,7 +160,7 @@ export.bib
 ## 👤 Author
 
 Diogo Filipe\
-Engineering Student --- NOVA FCT\
+Eletrotechnical and Computer Engineering Student --- NOVA FCT
 Focus Areas: Networking, Cybersecurity, Machine Learning
 
 ------------------------------------------------------------------------
