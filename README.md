@@ -172,7 +172,7 @@ export.bib
 
 ## 👤 Author
 
-Diogo Filipe  
+Diogo Neto Filipe  
 Eletrotechnical and Computer Engineering Student — NOVA FCT  
 
 Focus Areas:
