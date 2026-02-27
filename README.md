@@ -173,7 +173,7 @@ export.bib
 ## 👤 Author
 
 Diogo Neto Filipe  
-Eletrotechnical and Computer Engineering Student — NOVA FCT  
+MSc Eletrotechnical and Computer Engineering Student — NOVA FCT  
 
 Focus Areas:
 - Networking
