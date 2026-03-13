@@ -182,6 +182,3 @@ Focus Areas:
 
 ---
 
-## 📜 License
-
-MIT License
